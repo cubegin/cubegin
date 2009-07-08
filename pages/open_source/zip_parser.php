@@ -104,10 +104,6 @@ Total_Number_Of_Entries_In_The_Central_Directory_On_This_Disk ->
         LOCAL FILE HEADER
 --------------------------------------------------
 
-Use of uninitialized value in pack at Zip-Parser/zip_parser line 129.
-Use of uninitialized value in pack at Zip-Parser/zip_parser line 129.
-Use of uninitialized value in pack at Zip-Parser/zip_parser line 129.
-Use of uninitialized value in pack at Zip-Parser/zip_parser line 129.
 CRC-32 ->                                                            
         00000000                                                     
 Compressed_Data ->                                                   
