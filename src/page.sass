@@ -1,0 +1,100 @@
+@import screen.sass
+
+=code
+  +notice
+  :padding 5px 10px
+  :margin 10px
+  :font-family monospace
+  :font-size 12px
+  :overflow auto
+
+#container
+  :background-image url('../images/container_inner_page.jpg')
+
+#content
+
+  #column-1, #column-2
+    :text-align justify
+
+  #column-1
+    +column(7)
+    +prepend(0.5)
+    +append(0.5)
+    :margin 20px 0px
+
+    div
+      :margin 0px auto
+      :width 228px
+
+    h3
+      :text-align center
+      :color #fff
+      :padding-bottom 10px
+      :border-bottom 1px solid #fff
+      :width 188px
+      :margin 0px auto
+
+    .top
+      :background-image url('../images/sidebar_top.jpg')
+      :background-repeat repeat-y
+      :height 15px
+
+    .bottom
+      :background-image url('../images/sidebar_bottom.jpg')
+      :background-repeat repeat-y
+      :height 19px
+
+    .content
+      :background-image url('../images/sidebar_tile.jpg')
+      :background-repeat repeat-y
+      :height 400px
+
+      p
+        :padding 10px
+        :color #ccc
+    ul
+      :margin-top 40px
+      :font-size 16px
+      :list-style-type none
+
+      li
+        :border-bottom 1px solid #929497
+
+      a
+        :color #d4d3d1
+        :text-decoration none
+        :display block
+
+      a:hover
+        :background-image url('../images/arrow.png')
+        :background-repeat no-repeat
+        :background-position 100% 40% 
+
+  #column-2
+    +column( 15.5, true )
+    :margin-top 20px
+
+    .box
+      :background url('../images/org_box.gif') no-repeat top left
+      :background-color #e9eff3
+      :float right
+      :width 216px
+      :margin 0px 0px 0px 15px
+      :padding 15px 15px 20px 15px
+      :color #444444
+
+      .header
+        :color #477397
+        :font-size 16px
+
+    .code
+      +code
+
+    .large-code
+      +code
+      :height 300px
+
+    .block
+      +append(1)
+      +prepend(1)
+      :margin-bottom 30px

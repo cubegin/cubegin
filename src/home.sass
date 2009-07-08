@@ -1,0 +1,28 @@
+@import screen.sass
+
+#container
+  :background-color #dedcd0
+
+#content
+
+  #column-1, #column-2, #column-3
+    :text-align justify
+
+  #column-1
+    :position relative
+    +prepend(1)
+    +append(1)
+    +column(12)
+    h2
+      +replace-text("../images/welcome.jpg")
+
+  #column-2
+    :position relative
+    +prepend(1)
+    +append(1)
+    +column(8)
+    +last
+    h2.services
+      +replace-text("../images/services.jpg")
+    h2.web_development
+      +replace-text("../images/web_development.jpg")
